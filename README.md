@@ -105,11 +105,14 @@ Your journey will take you through the wildness of the American Midwest and acro
 > 🧨 Before you click the "Assessment Complete" button on the Learning Platform, add your answers below for each question and make a commit. It is your option to request a face-to-face meeting with a coach for a vocabulary review.
 
 1. In the **main** module, one of the first lines of code is `const drovers = hireDrovers(cattleToDrive)`. Explain what the value of the `drovers` variable is when that line of code runs.
-   > Your answer here
+   > The `drovers` variable's value is am array of 5 objects when that line of code runs due to it being equal to the `hireDrovers` function with an argument of `cattleToDrive` which is itself equal to 50. The `hireDrovers` function divides its argument by 10 and pushes the result into an array leaving us with a value of 5 objects for `drovers`.
+
 2. At the bottom of the main module, you will see the following code - `for (const drover of drovers)`. Explain what the values of both the `drover` and the `drovers` variables are.
-   > Your answer here
+   > The `drover` variable as the iterator as a value of the current object iterating through the drovers array with the properties of id, first_name, last_name, and gender. `drovers` meanwhile has a value of a random array populated by the `hireDrovers` function with a set of random drovers obtained from the `database`.
+
 3. In the **journey** module, there is a `journeyMaker()` function. In that function, there is a variable named `areas` which will have the value of an object. Use your debugger to show what the value of each key is on that object. Use [Loom](https://www.loom.com) to record your session.
-   > Your public Loom URL here
+   > https://www.loom.com/share/604a75034c954180888d622a72db3574
+
 4. Also in the **journey** module, there is the following code:
    ```js
    for (let forestNumber = 0; forestNumber < areas.forests; forestNumber++) {
@@ -117,11 +120,14 @@ Your journey will take you through the wildness of the American Midwest and acro
    }
    ```
    Explain this code with your best vocabulary.
-   > Your answer here
+   > This is a for of loop intended to push a `forest` string into the journey array a number of times until there are a number of them one greater than the value of `forests` in the `areas` object. It does this by initializing the value of `forestNumber` at 0. Then it checks if `forestNumber`'s value is less than the value of the `forests` property in the `areas` object, if it is then it increases the value of `forestNumber` by 1 and then lastly it pushes a `forest` string into the `journey` array. It then repeats the process until the value of `forestNumber` is greater than the value of the `forests` property.
+
 5. Explain the value of the `database` variable in the **database** module. Be as comprehensive as possible.
-   > Your answer here
+   > The `database` variable has a value of two properties `cattleTypes` and `drovers`, each of which is an array of objects unto themselves which also have their own properties. `cattleTypes` is an array of 4 objects with each having 3 properties. `drovers` is an array of 50 objects with each object having 4 properties.
+
+
 6. In the **drovers** module, there is a `hireDrovers()` function. You will notice the following code on that line - `(herdSize)`. What is that defining, and where does it get its value?
-   > Your answer here
+   > `(herdSize)` is the parameter of the `hireDrovers()` function representing the number of cattle in the herd. It gets its value when an argument is passed into when `hireDrovers` is invoked.
 
 
 ## Final Step
