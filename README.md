@@ -105,10 +105,10 @@ Your journey will take you through the wildness of the American Midwest and acro
 > 🧨 Before you click the "Assessment Complete" button on the Learning Platform, add your answers below for each question and make a commit. It is your option to request a face-to-face meeting with a coach for a vocabulary review.
 
 1. In the **main** module, one of the first lines of code is `const drovers = hireDrovers(cattleToDrive)`. Explain what the value of the `drovers` variable is when that line of code runs.
-   > The `drovers` variable's value is am array of 5 objects when that line of code runs due to it being equal to the `hireDrovers` function with an argument of `cattleToDrive` which is itself equal to 50. The `hireDrovers` function divides its argument by 10 and pushes the result into an array leaving us with a value of 5 objects for `drovers`.
+   > The `drovers` variable's value is an array of 5 objects when that line of code runs due to it being equal to the `hireDrovers` function with an argument of `cattleToDrive` which is itself equal to 50. The `hireDrovers` function divides its argument by 10 and pushes the result into an array leaving us with a value of 5 objects for `drovers`.
 
 2. At the bottom of the main module, you will see the following code - `for (const drover of drovers)`. Explain what the values of both the `drover` and the `drovers` variables are.
-   > The `drover` variable as the iterator as a value of the current object iterating through the drovers array with the properties of id, first_name, last_name, and gender. `drovers` meanwhile has a value of a random array populated by the `hireDrovers` function with a set of random drovers obtained from the `database`.
+   > The `drover` variable as the iterator has a value of the current object iterating through the drovers array with the properties of id, first_name, last_name, and gender. `drovers` meanwhile has a value of a random array populated by the `hireDrovers` function with a set of random drovers obtained from the `database`.
 
 3. In the **journey** module, there is a `journeyMaker()` function. In that function, there is a variable named `areas` which will have the value of an object. Use your debugger to show what the value of each key is on that object. Use [Loom](https://www.loom.com) to record your session.
    > https://www.loom.com/share/604a75034c954180888d622a72db3574
